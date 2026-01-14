@@ -1,0 +1,29 @@
+{
+  "name": "task-automation-platform",
+  "version": "0.1.0",
+  "description": "Modular task automation platform for Product/Project Managers",
+  "private": true,
+  "workspaces": [
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=frontend",
+    "build": "npm run build --workspace=frontend",
+    "start": "npm run start --workspace=frontend",
+    "supabase:start": "cd backend && supabase start",
+    "supabase:stop": "cd backend && supabase stop",
+    "supabase:status": "cd backend && supabase status",
+    "db:reset": "cd backend && supabase db reset",
+    "db:migrate": "cd backend && supabase migration up",
+    "db:new-migration": "cd backend && supabase migration new"
+  },
+  "keywords": [
+    "task-management",
+    "automation",
+    "project-management",
+    "ai",
+    "productivity"
+  ],
+  "author": "",
+  "license": "MIT"
+}
